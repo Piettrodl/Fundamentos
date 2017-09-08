@@ -1,0 +1,31 @@
+Proceso Menu
+	s=0;
+	Repetir
+		Escribir "Menu";
+		Escribir "1. Hamburguesa   Bs.3";
+		Escribir "2. Hamburguesa con queso   Bs.5";
+		Escribir "3. Papas fritas   Bs.2";
+		Escribir "4. Soda   Bs.2.5";
+		Escribir "0. Salir";
+		Escribir "Ingresar un numero de opcion del menu";
+		Leer opcion;
+		Escribir "Ingresar la cantidad: ";
+		Leer cantidad;
+		Segun Opcion Hacer
+			1:
+				totalp<-cantidad*3;
+			2:
+				totalp<-cantidad*5;
+			3:
+				totalp<-cantidad*2;
+			4:
+				totalp<-cantidad*2.5;
+			0:
+				Escribir "Salir";
+			De Otro Modo:
+				Escribir "Opcion Invalida";
+		FinSegun
+		s=s+totalp;
+	Hasta Que (opcion = 0);
+	escribir "El total de la cuenta: ", s;
+FinProceso
